@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <title>Linux</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Cheatsheet</a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/pages/Linux.html">Linux</a></li>
+                    <li><a href="/pages/Git.html">Git</a></li>
+                    <li><a href="/pages/PyCharm.html">PyCharm</a></li>
+                    <li><a href="/category/about.html">About</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Linux</h1>
+    
+    <h1>sudo command</h1>
+<p>Short for “SuperUser Do”, this command enables you to perform tasks that require administrative or root permissions.</p>
+<h1>cd command</h1>
+<p>To navigate through the Linux files and directories, use the cd command. It requires either the full path or the name of the directory, depending on the current working directory that you’re in.</p>
+<p>There are some shortcuts to help you navigate quickly:</p>
+<ul>
+<li>cd .. (with two dots) to move one directory up</li>
+<li>cd to go straight to the home folder</li>
+<li>cd- (with a hyphen) to move to your previous directory</li>
+</ul>
+<h1>pwd command</h1>
+<p>Use the pwd command to find out the path of the current working directory (folder) you’re in. The command will return an absolute (full) path, which is basically a path of all the directories that starts with a forward slash (/). An example of an absolute path is /home/username.</p>
+<h1>ls command</h1>
+<p>The ls command is used to view the contents of a directory. By default, this command will display the contents of your current working directory.</p>
+<p>If you want to see the content of other directories, type ls and then the directory’s path. For example, enter ls /home/username/Documents to view the content of Documents.</p>
+<p>There are variations you can use with the ls command:</p>
+<ul>
+<li>ls -R will list all the files in the sub-directories as well</li>
+<li>ls -a will show the hidden files</li>
+<li>ls -al will list the files and directories with detailed information like the permissions, size, owner, etc.</li>
+</ul>
+<h1>mkdir command</h1>
+<p>Use mkdir command to make a new directory — if you type mkdir Music it will create a directory called Music.</p>
+<p>There are extra mkdir commands as well:</p>
+<ul>
+<li>To generate a new directory inside another directory, use this Linux basic command mkdir Music/Newfile</li>
+<li>use the p (parents) option to create a directory in between two existing directories. For example, mkdir -p Music/2020/Newfile will create the new “2020” file.</li>
+</ul>
+<h1>cat command</h1>
+<p>cat (short for concatenate) is one of the most frequently used commands in Linux. It is used to list the contents of a file on the standard output (sdout). To run this command, type cat followed by the file’s name and its extension. For instance: cat file.txt.</p>
+<p>Here are other ways to use the cat command:</p>
+<ul>
+<li>cat &gt; filename creates a new file</li>
+<li>cat filename1 filename2&gt;filename3 joins two files (1 and 2) and stores the output of them in a new file (3)</li>
+<li>to convert a file to upper or lower case use, cat filename | tr a-z A-Z &gt;output.txt</li>
+</ul>
+<h1>cp command</h1>
+<p>Use the cp command to copy files from the current directory to a different directory. For instance, the command cp scenery.jpg /home/username/Pictures would create a copy of scenery.jpg (from your current directory) into the Pictures directory.</p>
+<h1>mv command</h1>
+<p>The primary use of the mv command is to move files, although it can also be used to rename files.</p>
+<p>The arguments in mv are similar to the cp command. You need to type mv, the file’s name, and the destination’s directory. For example: mv file.txt /home/username/Documents.</p>
+<p>To rename files, the Linux command is mv oldname.ext newname.ext</p>
+<h1>rm command</h1>
+<p>The rm command is used to delete directories and the contents within them. If you only want to delete the directory use <strong><em>rm -r</em></strong>.</p>
+<p><strong><em><strong>Note:</strong></em></strong> Be very careful with this command and double-check which directory you are in. This will delete everything and there is no undo.</p>
+<h1>touch command</h1>
+<p>The touch command allows you to create a blank new file through the Linux command line. As an example, enter touch /home/username/Documents/Web.html to create an HTML file entitled Web under the Documents directory.</p>
+<h1>grep command</h1>
+<p>Another basic Linux command that is undoubtedly helpful for everyday use is grep. It lets you search through all the text in a given file.</p>
+<p>To illustrate, grep blue notepad.txt will search for the word blue in the notepad file. Lines that contain the searched word will be displayed fully.</p>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://www.jetbrains.com/help/pycharm/quick-start-guide.html">PyCharm</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <title>Git</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Cheatsheet</a></h1>
+                <nav><ul>
+                    <li><a href="/pages/Linux.html">Linux</a></li>
+                    <li class="active"><a href="/pages/Git.html">Git</a></li>
+                    <li><a href="/pages/PyCharm.html">PyCharm</a></li>
+                    <li><a href="/category/about.html">About</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Git</h1>
+    
+    <h1>git init</h1>
+<p>This command turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.</p>
+<h1>git add</h1>
+<p>Adds files in the to the staging area for Git. Before a file is available to commit to a repository, the file needs to be added to the Git index (staging area). There are a few different ways to use git add, by adding entire directories, specific files, or all unstaged files.<br>
+<strong><em>git add &lt; file or directory name &gt;</em></strong></p>
+<h1>git commit</h1>
+<p>Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.</p>
+<p>It’s best practice to include a message with each commit explaining the changes made in a commit. Adding a commit message helps to find a particular change or understanding the changes.<br>
+<strong><em>git commit -m "Commit message in quotes"</em></strong></p>
+<h1>git status</h1>
+<p>This command returns the current state of the repository.</p>
+<p>git status will return the current working branch. If a file is in the staging area, but not committed, it shows with git status. Or, if there are no changes it’ll return nothing to commit, working directory clean.  </p>
+<h1>git config</h1>
+<p>With Git, there are many configurations and settings possible. git config is how to assign these settings. Two important settings are user user.name and user.email. These values set what email address and name commits will be from on a local computer. With git config, a --global flag is used to write the settings to all repositories on a computer. Without a --global flag settings will only apply to the current repository that you are currently in.<br>
+<strong><em>git config <setting> <command></em></strong><br>
+<strong><em>git config --global user.email "my@emailaddress.com"</em></strong><br>
+<strong><em>git config --global user.name "Brian Kerr"</em></strong>  </p>
+<h1>git branch</h1>
+<p>To determine what branch the local repository is on, add a new branch, or delete a branch.  </p>
+<ul>
+<li>
+<p>Create a new branch<br>
+<strong><em>git branch <branch_name></em></strong></p>
+</li>
+<li>
+<p>List all remote or local branches<br>
+<strong><em>git branch -a</em></strong></p>
+</li>
+<li>
+<p>Delete a branch<br>
+<strong><em>git branch -d <branch_name></em></strong></p>
+</li>
+</ul>
+<h1>git checkout</h1>
+<p>To start working in a different branch, use git checkout to switch branches.  </p>
+<ul>
+<li>
+<p>Checkout an existing branch<br>
+<strong><em>git checkout <branch_name></em></strong></p>
+</li>
+<li>
+<p>Checkout and create a new branch with that name<br>
+<strong><em>git checkout -b <new_branch></em></strong></p>
+</li>
+</ul>
+<h1>git merge</h1>
+<p>Integrate branches together. git merge combines the changes from one branch to another branch. For example, merge the changes made in a staging branch into the stable branch.<br>
+<strong><em>git merge <branch_name></em></strong>  </p>
+<h1>git remote</h1>
+<p>To connect a local repository with a remote repository. A remote repository can have a name set to avoid having to remember the URL of the repository.  </p>
+<ul>
+<li>
+<p>Add remote repository<br>
+<strong><em>git remote <command> <remote_name> <remote_URL></em></strong></p>
+</li>
+<li>
+<p>List named remote repositories<br>
+<strong><em>git remote -v</em></strong>  </p>
+</li>
+</ul>
+<h1>git clone</h1>
+<p>To create a local working copy of an existing remote repository, use git clone to copy and download the repository to a computer. Cloning is the equivalent of git init when working with a remote repository. Git will create a directory locally with all files and repository history.<br>
+<strong><em>git clone <remote_URL></em></strong></p>
+<h1>git pull</h1>
+<p>To get the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer.<br>
+<strong><em>git pull <branch_name> <remote_URL/remote_name></em></strong></p>
+<h1>git push</h1>
+<p>Sends local commits to the remote repository. git push requires two parameters: the remote repository and the branch that the push is for.<br>
+<strong><em>git push <remote_URL/remote_name> <branch></em></strong> <br>
+Push all local branches to remote repository - <strong><em>git push —all</em></strong>  </p>
+<h1>git log</h1>
+<p>To show the chronological commit history for a repository. This helps give context and history for a repository. git log is available immediately on a recently cloned repository to see history.  </p>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://www.jetbrains.com/help/pycharm/quick-start-guide.html">PyCharm</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
